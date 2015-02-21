@@ -6,7 +6,7 @@ fib :: Int -> Int
 fib a =
   if a < 0
     then - 1
-    else if a < 2
+    else if a == 1
            then 0
            else
              let
@@ -20,4 +20,4 @@ fib a =
                                        in go bef1' bef2' p'
              in go 0 1 a
 
-main = print (fib 9)
+main = print (fib 5)
